@@ -1,0 +1,139 @@
+/* App Colors */
+:root {
+  --main-color: #0e5e48;
+  --light-color: white;
+  --dark-color: #2f2d2d;
+  --highlight-color: #7bbcc2;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+.btn {
+  display: inline-block;
+  background: var(--light-color);
+  color: var(--dark-color);
+  padding: 0.4rem 1.4rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  margin-right: 0.5rem;
+  transition: opacity 0.2s ease-in;
+}
+
+.main-back {
+  background: var(--main-color);
+  color: white;
+}
+
+.light-back {
+  background: var(--light-color);
+  color: var(--dark-color);
+}
+
+.dark-back {
+  background: var(--dark-color);
+  color: white;
+}
+
+.highlight-back {
+  background: var(--highlight-color);
+  color: white;
+}
+
+a {
+  color: var(--light-color);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: var(--light-color);
+  padding: 0.45rem;
+  margin: 0 0.25rem;
+}
+
+.x-large {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.large {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.navbar a:hover {
+  color: var(--highlight-color);
+}
+
+.fas {
+  padding: 0 0.5rem;
+}
+
+.landing {
+  position: relative;
+  background: url('../img/car_background.jpg') no-repeat center center/cover;
+  height: 100vh;
+}
+
+.landing-inner {
+  color: #fff;
+  height: 80%;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
