@@ -1,9 +1,13 @@
+/* -------------------------------   Main App Settings   ------------------------------- */
+
 /* App Colors */
 :root {
   --main-color: #0e5e48;
   --light-color: white;
+  --medium-color: #ebebebb6;
   --dark-color: #2f2d2d;
   --highlight-color: #7bbcc2;
+  --accent-color: #2b8e97;
 }
 
 * {
@@ -20,40 +24,24 @@ body {
   color: var(--dark-color);
 }
 
+/* -------------------------------   Button Settings   ------------------------------- */
 .btn {
   display: inline-block;
   background: var(--light-color);
   color: var(--dark-color);
+  border-radius: 5px;
   padding: 0.4rem 1.4rem;
   font-size: 1rem;
+  cursor: pointer;
   border: none;
   outline: none;
   margin-right: 0.5rem;
   transition: opacity 0.2s ease-in;
 }
 
-.main-back {
-  background: var(--main-color);
-  color: white;
-}
-
-.light-back {
-  background: var(--light-color);
-  color: var(--dark-color);
-}
-
-.dark-back {
-  background: var(--dark-color);
-  color: white;
-}
-
-.highlight-back {
-  background: var(--highlight-color);
-  color: white;
-}
-
+/* -------------------------------   Default HTML Tag Settings   ------------------------------- */
 a {
-  color: var(--light-color);
+  color: var(--accent-color);
   text-decoration: none;
 }
 
@@ -65,6 +53,91 @@ img {
   width: 100%;
 }
 
+/* -------------------------------   Image Settings   ------------------------------- */
+.round-img {
+  border-radius: 100%;
+}
+
+.sqaure-crop {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* -------------------------------   Color Schemes   ------------------------------- */
+.main-back {
+  background: var(--main-color);
+  color: var(--light-color);
+}
+
+.light-back {
+  background: var(--light-color);
+  color: var(--dark-color);
+}
+
+.dark-back {
+  background: var(--dark-color);
+  color: var(--light-color);
+}
+
+.highlight-back {
+  background: var(--highlight-color);
+  color: var(--light-color);
+}
+
+.medium-back {
+  background: var(--medium-color);
+  color: var(--dark-color);
+}
+
+.accent-back {
+  background: var(--accent-color);
+  color: var(--light-color);
+}
+
+/* -------------------------------   Text Settings   ------------------------------- */
+.x-large {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.large {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.text-main {
+  color: var(--main-color);
+}
+
+.text-light {
+  color: var(--light-color);
+}
+
+.text-dark {
+  color: var(--dark-color);
+}
+
+.text-highlight {
+  color: var(--highlight-color);
+}
+
+.text-medium {
+  color: var(--medium-color);
+}
+
+.text-accent {
+  color: var(--accent-color);
+}
+
+/* -------------------------------   Navbar Settings   ------------------------------- */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -86,31 +159,16 @@ img {
   margin: 0 0.25rem;
 }
 
-.x-large {
-  font-size: 4rem;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-}
-
-.large {
-  font-size: 3rem;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-}
-
-.lead {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
 .navbar a:hover {
   color: var(--highlight-color);
 }
 
+/* -------------------------------   Icon Settings   ------------------------------- */
 .fas {
   padding: 0 0.5rem;
 }
 
+/* -------------------------------   Positioning Settings   ------------------------------- */
 .landing {
   position: relative;
   background: url('../img/car_background.jpg') no-repeat center center/cover;
@@ -136,4 +194,117 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  border-radius: 10px;
+  align-items: center;
+  grid-gap: 2rem;
+  padding: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+/* -------------------------------   Form Settings   ------------------------------- */
+.form .form-group {
+  margin: 1.2rem 0;
+}
+
+.form {
+  display: block;
+  margin-top: 0.3rem;
+  color: #888;
+}
+
+.form input[type='text'],
+.form input[type='email'],
+.form input[type='password'],
+.form input[type='date'],
+.form select,
+.form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+}
+
+.form input[type='submit'],
+button {
+  font: inherit;
+}
+
+/* -------------------------------    Padding   ------------------------------- */
+.p {
+  padding: 0.5rem;
+}
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+.py {
+  padding: 0.5rem 0;
+}
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+
+/* -------------------------------   Margin   ------------------------------- */
+.m {
+  margin: 0.5rem;
+}
+.m-1 {
+  margin: 1rem;
+}
+.m-2 {
+  margin: 2rem;
+}
+.m-3 {
+  margin: 3rem;
+}
+.my {
+  margin: 0.5rem 0;
+}
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 2rem 0;
+}
+.my-3 {
+  margin: 3rem 0;
+}
+
+/* -------------------------------   ID Settings   ------------------------------- */
+#search-bar {
+  display: inline;
+  width: 88%;
+  margin-bottom: 1rem;
+}
+
+#search-btn {
+  display: inline;
+  margin-left: 1rem;
 }
