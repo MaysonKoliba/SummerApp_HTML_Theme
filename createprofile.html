@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://fonts.googleapis.com/css?family=Raleway"
+            rel="stylesheet"
+            />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+            crossorigin="anonymous"
+            />
+        <link rel="stylesheet" href="css/style.css">
+        <title>Create Profile</title>
+    </head>
+    <body>
+        <nav class="navbar main-back">
+            <h1>
+                <a href="index.html"><i class="fas fa-image"></i>SummerApp</a>
+            </h1>
+            <ul>
+                <li><a href="profiles.html"><i class="fas fa-user-friends"></i>Explore</a></li>
+                <li><a href="register.html"><i class="fas fa-check"></i>Register</a></li>
+                <li><a href="login.html"><i class="fas fa-sign-in-alt"></i>Login</a></li>
+            </ul>
+        </nav>
+        <section class="container">
+            <h1 class="large text-accent">Create Your Profile</h1>
+            <form class="form">
+                <div class="form-group">
+                    <input type="text" placeholder="First Name" name="First Name" />
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Last Name" name="Last Name" />
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Profession" name="Profession" />
+                    <small class="form-text">Could be your own company or one you work for</small>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Skills and Hobbies" name="Skills and Hobbies" />
+                    <small class="form-text">List any talents that you have using a comma separated list</small>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Bio" name="Bio"></textarea>
+                    <small class="form-text">Write a short bio for yourself</small>
+                </div>
+                <div class="my-2">
+                    <button type="button" class="btn medium-back">
+                    Add Social Network Links
+                    </button>
+                    <span>Optional</span>
+                </div>
+                <div class="form-group social-input">
+                    <i class="fab fa-twitter fa-2x"></i>
+                    <input type="text" placeholder="Twitter URL" name="twitter" />
+                </div>
+                <div class="form-group social-input">
+                    <i class="fab fa-facebook fa-2x"></i>
+                    <input type="text" placeholder="Facebook URL" name="facebook" />
+                </div>
+                <div class="form-group social-input">
+                    <i class="fab fa-youtube fa-2x"></i>
+                    <input type="text" placeholder="YouTube URL" name="youtube" />
+                </div>
+                <div class="form-group social-input">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                    <input type="text" placeholder="Linkedin URL" name="linkedin" />
+                </div>
+                <div class="form-group social-input">
+                    <i class="fab fa-instagram fa-2x"></i>
+                    <input type="text" placeholder="Instagram URL" name="instagram" />
+                </div>
+                <input type="submit" class="btn accent-back my-1" />
+                <a class="btn medium-back my-1" href="dashboard.html">Go Back</a>
+            </form>
+        </section>
+    </body>
+</html>

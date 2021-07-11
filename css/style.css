@@ -8,6 +8,7 @@
   --dark-color: #2f2d2d;
   --highlight-color: #7bbcc2;
   --accent-color: #2b8e97;
+  --danger-color: #c73442;
 }
 
 * {
@@ -37,6 +38,15 @@ body {
   outline: none;
   margin-right: 0.5rem;
   transition: opacity 0.2s ease-in;
+}
+
+.btn-danger,
+.bg-danger,
+.badge-danger,
+.alert-danger {
+  background: var(--danger-color);
+  color: #fff;
+  padding: 0.4rem 1rem;
 }
 
 /* -------------------------------   Default HTML Tag Settings   ------------------------------- */
@@ -216,15 +226,108 @@ img {
   margin-bottom: 1rem;
 }
 
-/* -------------------------------   Form Settings   ------------------------------- */
-.form .form-group {
-  margin: 1.2rem 0;
+.profile-top img {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 1rem;
 }
 
+.profile-top .icons a {
+  color: var(--accent-color);
+  margin: 0 0.3rem;
+}
+
+.profile-top .icons a:hover {
+  color: var(--dark-color);
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-areas:
+    'top top'
+    'about about'
+    'post post';
+  grid-gap: 1rem;
+}
+
+.profile-top {
+  grid-area: top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile-about {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  grid-area: about;
+  text-align: center;
+}
+
+.profile-about .skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.post-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.5rem;
+  grid-area: post;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.post-box img {
+  width: 340px;
+  height: 340px;
+}
+
+.post-box div {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.post {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 2rem;
+  align-items: center;
+}
+
+.post img {
+  width: 100px;
+  height: 100px;
+}
+
+.post > div:first-child {
+  text-align: center;
+}
+
+.post .post-date {
+  color: #aaa;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+/* -------------------------------   Form Settings   ------------------------------- */
 .form {
   display: block;
   margin-top: 0.3rem;
   color: #888;
+}
+
+.form .form-group {
+  margin: 1.2rem 0;
 }
 
 .form input[type='text'],
